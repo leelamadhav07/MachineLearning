@@ -1,0 +1,94 @@
+/* App Background */
+.stApp {
+    background: linear-gradient(135deg,
+            #0b7ef1 0%,
+            #4b0449 50%,
+            #2c6304 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card Layout */
+.card {
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    margin-bottom: 25px;
+    backdrop-filter: blur(8px);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* Sub text */
+p {
+    color: #1e293b;
+    font-size: 15px;
+}
+
+/* Streamlit Metrics */
+div[data-testid="metric-container"] {
+    background-color: #f8fafc;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Metric labels */
+div[data-testid="metric-container"] label {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Prediction box */
+.prediction-box {
+    background: linear-gradient(135deg,
+            #dcfce7,
+            #bbf7d0);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #14532d;
+    margin-top: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider styling spacing */
+div[data-testid="stSlider"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Dataframe styling */
+[data-testid="stDataFrame"] {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Plot container */
+.stPlotlyChart,
+.stPyplot {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 18px;
+    }
+
+    .prediction-box {
+        font-size: 18px;
+    }
+}
